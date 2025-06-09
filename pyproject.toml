@@ -8,8 +8,15 @@ readme = "README.md"
 packages = [{include = "python_tutorials"}]
 
 [tool.poetry.dependencies]
-python = ">=3.9"
+python = ">=3.10"
+psutil = "^7.0.0"
+numba = "^0.61.2"
+matplotlib = "^3.10.3"
+tqdm = "^4.67.1"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]
